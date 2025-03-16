@@ -1,0 +1,157 @@
+body {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background 1s ease; 
+    color: white;
+}
+#backgroundImg{
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -3;
+    background-size: cover;
+}
+.top-container{
+    align-items: center;
+    padding-top: 5%;
+  
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+
+}
+#whereL{
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* More balanced spacing */
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10%;
+    gap: 20px; /* Adds uniform spacing */
+}
+
+.itemsonleft, .itemsonright {
+}
+
+.tophalf {
+    flex: 0.5;
+    text-align: center; /* Centers temperature in the middle */
+}
+#weather-temp{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.forecast-item {
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 150px;
+    display: inline-block;
+    justify-content: center;
+    height: 200px;
+    margin: 0 auto; 
+}
+
+.forecast-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.button {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    background-color: rgb(20, 255, 231);
+    border-radius: 30px;
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    transition-duration: .5s;
+    margin-top: 10px; /* Adds space above the button */
+    margin-left: 10px; 
+  }
+  
+  .svgIcon {
+    height: 25px;
+    transition-duration: 1.5s;
+  }
+  
+  .bell path {
+    fill: rgb(19, 19, 19);
+  }
+  
+  .button:hover {
+    background-color: rgb(10, 138, 213);
+    transition-duration: .5s;
+  }
+  
+  .button:active {
+    transform: scale(0.97);
+    transition-duration: .2s;
+  }
+  
+  .button:hover .svgIcon {
+    transform: rotate(250deg);
+    transition-duration: 1.5s;
+  }
+
+  #hourly-forecast {
+    display: flex;
+    overflow-x: auto; /* Scrollable if too many items */
+    gap: 15px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.hourly-item {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+}
+
+.hourly-item img {
+    width: 50px;
+    height: 50px;
+}
+#sevenday , #hourly {
+    text-align: center; /* Centers the text */
+    width: 100%; /* Ensures it takes full width */
+    font-weight: bold;
+    font-size: 40px;
+}
+#forecast {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    text-align: center;
+    width: 100%;
+}
+#weeklyforecast {
+    background: rgba(211, 211, 211, 0.3); /* Light grey transparent box */
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
